@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOW BAD? — The party game of terrible situations</title>
+<meta name="description" content="Terrible situations, each rated 1 to 100. Guess the score, rank the misery, argue about it. A party game for 1 to 8 players. Free on Google Play with 200 cards, full game €4.99.">
+<meta property="og:title" content="HOW BAD? — The party game of terrible situations">
+<meta property="og:description" content="Terrible situations, each rated 1 to 100. Pass the phone and argue. Free on Google Play.">
+<meta name="theme-color" content="#FFF3DE">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#E63946; --dark-red:#8F1D2C; --ink:#241A18;
+  --cream:#FFF3DE; --slip:#FFFBF2; --slip-edge:#E8D7BC;
+  --mint:#2E7D5B; --blood:#8F1D2C; --amber:#E6A93A;
+  --display:"Arial Black","Segoe UI Black","Helvetica Neue",-apple-system,BlinkMacSystemFont,Roboto,sans-serif;
+  --ui:Nunito,Quicksand,"SF Pro Rounded",ui-rounded,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --shadow:5px 5px 0 rgba(20,26,36,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--cream);
+  background-image:repeating-linear-gradient(135deg,rgba(36,26,24,.035) 0 14px,rgba(36,26,24,0) 14px 28px);
+  color:var(--ink);
+  font-family:var(--ui);font-weight:600;font-size:16.5px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* ---------- shared app pieces ---------- */
+.slip{background:var(--slip);border:2px solid var(--ink);border-radius:12px;box-shadow:var(--shadow);padding:22px}
+.stamp{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dark-red);border:1.5px solid currentColor;border-radius:7px;padding:3px 8px;display:inline-block}
+.stamp.turn{background:var(--red);color:var(--cream);border-color:var(--red)}
+.stamp.mode{background:var(--ink);color:var(--cream);border-color:var(--ink);letter-spacing:.08em}
+.btn{display:inline-block;background:var(--red);color:var(--cream);border:2px solid var(--ink);border-radius:11px;
+  font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:20px;letter-spacing:-.01em;
+  padding:13px 22px 11px;box-shadow:4px 4px 0 rgba(20,26,36,.35);text-decoration:none;cursor:pointer;
+  transition:transform .08s ease,box-shadow .08s ease}
+.btn:active{transform:translate(4px,4px);box-shadow:0 0 0 rgba(0,0,0,0)}
+.btn.light{background:var(--slip);color:var(--ink)}
+.btn.dark{background:var(--ink);color:var(--cream)}
+.btn.block{display:block;width:100%;text-align:center}
+.btn:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--dark-red);outline-offset:3px}
+.fieldlabel{font-weight:800;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;opacity:.85;margin-bottom:8px}
+
+/* ---------- logo ---------- */
+.logo{font-family:var(--display);font-weight:900;line-height:.74;text-transform:uppercase;letter-spacing:-.04em;user-select:none}
+.logo .how{display:block;font-size:.5em;color:var(--ink);letter-spacing:-.02em;
+  transform:rotate(-3.5deg);transform-origin:0 60%;margin-left:.06em;margin-bottom:-.06em;position:relative;z-index:2}
+.logo .badwrap{display:block;white-space:nowrap}
+.logo .bad{display:inline-block;font-size:1em;color:var(--red);transform:rotate(1.5deg)}
+.logo .q{display:inline-block;font-size:1.32em;color:var(--red);transform:rotate(15deg) translate(.03em,.07em);
+  transform-origin:40% 60%;text-shadow:.045em .045em 0 var(--dark-red);margin-left:-.01em;position:relative;z-index:3}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:40;background:rgba(255,243,222,.93);backdrop-filter:blur(8px);
+  border-bottom:2px solid var(--ink)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px}
+.nav .logo{font-size:26px}
+.nav-links{display:flex;align-items:center;gap:22px}
+.nav-links a:not(.btn){color:var(--ink);text-decoration:none;font-weight:800;font-size:12px;
+  letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.nav-links a:not(.btn):hover{opacity:1}
+.nav .btn{font-size:15px;padding:9px 15px 7px;box-shadow:3px 3px 0 rgba(20,26,36,.35)}
+@media(max-width:760px){.nav-links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding:52px 0 60px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:40px;padding:36px 0 48px}}
+.hero .logo{font-size:clamp(72px,11vw,116px)}
+.hero .tag{font-weight:800;font-size:17px;margin-top:22px;color:var(--dark-red)}
+.hero .deckline{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px;opacity:.55}
+.hero .lede{margin-top:20px;font-size:17.5px;max-width:40ch}
+.hero-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.facts span{border:2px dashed rgba(36,26,24,.45);border-radius:10px;padding:7px 11px;
+  font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,251,242,.55)}
+
+/* ---------- playable demo ---------- */
+.demo{transform:rotate(-1deg)}
+.demo .kop{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px}
+.demo .txt{font-size:22px;line-height:1.3;font-weight:700;letter-spacing:-.01em;min-height:3.9em;display:flex;align-items:center}
+.guessnum{font-family:var(--display);font-weight:900;font-size:52px;line-height:1;color:var(--red);letter-spacing:-.03em;text-align:center}
+.guesslabel{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;opacity:.6;margin:4px 0 14px;text-align:center}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:14px;border-radius:8px;
+  border:2px solid var(--ink);background:linear-gradient(to right,var(--mint),var(--amber) 45%,var(--red) 78%,var(--dark-red));outline:none;cursor:grab}
+input[type=range]:active{cursor:grabbing}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:32px;height:32px;border-radius:50%;
+  background:var(--cream);border:3px solid var(--ink);box-shadow:2px 2px 0 rgba(36,26,24,.4);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:32px;height:32px;border-radius:50%;background:var(--cream);border:3px solid var(--ink);cursor:pointer}
+.guessends{display:flex;justify-content:space-between;gap:10px;font-weight:800;font-size:11px;opacity:.6;
+  margin:8px 2px 18px;text-transform:uppercase;letter-spacing:.04em}
+.demo .result{border-top:1.5px dashed var(--slip-edge);margin-top:16px;padding-top:14px;text-align:center}
+.demo .result h3{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:30px;
+  line-height:.9;letter-spacing:-.03em;margin-bottom:6px}
+.demo .result.good h3{color:var(--mint)} .demo .result.bad h3{color:var(--blood)}
+.demo .result p{font-size:14px}
+.demo .result b{font-family:var(--display);font-weight:900;font-size:20px;letter-spacing:-.02em}
+.demo .foot{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.55;
+  margin-top:14px;text-align:center}
+.hidden{display:none}
+
+/* ---------- sections ---------- */
+section{padding:64px 0}
+.sechead{margin-bottom:30px;max-width:52ch}
+.sechead h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(30px,5vw,44px);
+  line-height:.92;letter-spacing:-.035em;margin:10px 0 12px}
+.sechead p{font-size:16.5px;max-width:56ch}
+.divider{border-top:2px dashed rgba(20,26,36,.4)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:840px){.grid2,.grid3{grid-template-columns:1fr}}
+.slip h3{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:24px;
+  letter-spacing:-.03em;margin:12px 0 8px}
+.slip p{font-size:15px}
+.slip .pts{margin-top:14px;padding-top:12px;border-top:1.5px dashed var(--slip-edge);
+  font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--dark-red)}
+
+/* rail illustration */
+.railwrap{position:relative;padding-left:46px}
+.railwrap::before{content:"";position:absolute;left:21px;top:6px;bottom:6px;width:4px;
+  background:linear-gradient(to bottom,var(--mint),var(--amber) 45%,var(--red) 78%,var(--dark-red))}
+.railcap{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  margin-left:-46px;padding-left:46px;opacity:.8;margin-bottom:8px}
+.railcap.bottom{margin-top:8px;margin-bottom:0}
+.tcard{position:relative;background:var(--slip);border:2px solid var(--ink);border-radius:11px;padding:11px 13px;margin:9px 0;
+  box-shadow:3px 3px 0 rgba(36,26,24,.3);font-weight:600;font-size:14.5px;line-height:1.4}
+.tcard .idx{position:absolute;left:-46px;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;
+  border:2px solid var(--ink);background:var(--slip);display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-weight:900;font-size:15px;letter-spacing:-.02em}
+.tcard.newcard{border-style:dashed;background:rgba(255,251,242,.55)}
+.tcard.newcard .idx{border-style:dashed;font-size:17px;color:var(--red)}
+
+/* editions */
+.ed{position:relative}
+.ed.brutal{background:linear-gradient(180deg,rgba(230,57,70,.09),rgba(255,251,242,0) 55%),var(--slip)}
+.ed ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.ed li{font-size:14.5px;font-weight:600;padding:9px 12px;border:2px solid rgba(36,26,24,.35);border-radius:10px;
+  background:rgba(255,251,242,.7);display:flex;justify-content:space-between;gap:12px;align-items:center}
+.ed li b{font-family:var(--display);font-weight:900;font-size:16px;letter-spacing:-.02em;color:var(--red);flex:0 0 auto}
+.ed .avg{margin-top:14px;font-weight:800;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.65}
+
+/* languages */
+.langs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:700px){.langs{grid-template-columns:repeat(2,1fr)}}
+.langs div{background:rgba(255,251,242,.75);border:2px solid var(--ink);border-radius:10px;
+  padding:13px 6px;text-align:center;font-weight:800;font-size:13.5px;letter-spacing:.04em}
+
+/* price */
+.tier{display:flex;flex-direction:column}
+.tier .amount{font-family:var(--display);font-weight:900;font-size:52px;line-height:1;letter-spacing:-.04em;margin:8px 0 4px}
+.tier.paid{border-width:3px}
+.tier.paid .amount{color:var(--red)}
+.tier ul{list-style:none;margin:16px 0 20px;display:flex;flex-direction:column;gap:9px}
+.tier li{font-size:15px;padding-left:24px;position:relative}
+.tier li::before{content:"✓";position:absolute;left:0;color:var(--mint);font-weight:900}
+.tier .btn{margin-top:auto}
+.buy-sub{font-weight:700;font-size:11.5px;text-align:center;margin-top:8px;color:var(--dark-red)}
+
+/* faq */
+details{border-bottom:2px dashed rgba(20,26,36,.35);padding:16px 0}
+summary{cursor:pointer;list-style:none;font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:19px;letter-spacing:-.02em;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--red);font-size:26px;line-height:1;font-family:var(--display)}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;font-size:15px;max-width:66ch}
+
+/* closer */
+.closer{text-align:center;padding:76px 0}
+.closer .logo{font-size:clamp(56px,10vw,92px);display:inline-block;text-align:left}
+.closer p{margin:24px auto 26px;max-width:44ch;font-size:17px}
+
+footer{border-top:2px solid var(--ink);padding:26px 0;background:rgba(255,251,242,.5)}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;
+  font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.7}
+.foot-in a{color:var(--ink);text-decoration:none;margin-left:18px}
+.foot-in a:hover{text-decoration:underline}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none} html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <div class="logo" aria-label="HOW BAD?"><span class="how">How</span><span class="badwrap"><span class="bad">Bad</span><span class="q">?</span></span></div>
+    <div class="nav-links">
+      <a href="#modes">Game modes</a>
+      <a href="#price">Free &amp; full</a>
+      <a href="#faq">Questions</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.howbadgame.app">Get it free</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div>
+    <h1 class="logo"><span class="how">How</span><span class="badwrap"><span class="bad">Bad</span><span class="q">?</span></span></h1>
+    <div class="tag">The party game of terrible situations</div>
+    <div class="deckline">200 free cards · full deck of 995 · rated 1–100</div>
+    <p class="lede">Every situation in the deck carries a misery score, from a cold coffee to losing everything. Your job is to guess it, rank it, or pick which one is worse — and then defend your answer to everyone at the table.</p>
+    <div class="hero-cta">
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.howbadgame.app">Get it on Google Play</a>
+      <a class="btn light" href="#modes">See how it works</a>
+    </div>
+    <div class="facts">
+      <span>1–8 players</span><span>Pass one phone</span><span>Works offline</span><span>8 languages</span>
+    </div>
+  </div>
+
+  <div class="slip demo">
+    <div class="kop">
+      <span class="stamp mode">Exactly how bad?</span>
+      <span class="stamp turn">Try it</span>
+    </div>
+    <div class="txt" id="cardText">—</div>
+
+    <div id="guessArea">
+      <div class="guessnum" id="guessNum">50</div>
+      <div class="guesslabel">Your guess</div>
+      <input type="range" id="slider" min="0" max="100" value="50" aria-label="How bad is this, from 0 to 100">
+      <div class="guessends"><span>Minor annoyance</span><span>Disaster</span></div>
+      <button class="btn block" id="confirmBtn">Confirm</button>
+    </div>
+
+    <div class="result hidden" id="result">
+      <h3 id="resultHead">—</h3>
+      <p>Actual score <b id="realScore">—</b> · off by <b id="diff">—</b></p>
+      <button class="btn light block" id="nextBtn" style="margin-top:14px">Next card</button>
+    </div>
+
+    <div class="foot">Off by 5 or less = 2 points · up to 10 = 1 point</div>
+  </div>
+</header>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section id="modes">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="stamp">Two ways to play</span>
+      <h2>Classic builds a line.<br>Party keeps switching.</h2>
+      <p>Pick a mode before you start. Classic is a slow, tense build. Party throws a different kind of turn at the whole table every round.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="slip reveal">
+        <span class="stamp mode">Classic</span>
+        <h3>Build your own misery line</h3>
+        <p>You start with one situation. Every turn a new one arrives without a score. Put it in the right spot in your line and it stays there — one point. Then slide the score close enough to the real one for a second point. The margin shrinks as your line grows: 5 points at first, 3 from five cards, 1 from seven.</p>
+        <div class="pts">First to the target score wins</div>
+      </div>
+      <div class="slip reveal">
+        <span class="stamp mode">Party</span>
+        <h3>Same turn, everyone, every round</h3>
+        <p>Three kinds of turn rotate. Within a round everyone plays the same one, so nobody gets an easier deal than the person next to them. After the last round, most points wins.</p>
+        <div class="pts">Set 5, 10 or 15 rounds</div>
+      </div>
+    </div>
+
+    <div class="grid3" style="margin-top:20px">
+      <div class="slip reveal">
+        <span class="stamp turn">Turn type</span>
+        <h3>Exactly how bad?</h3>
+        <p>One situation, no score. Guess it with the slider.</p>
+        <div class="pts">Off by ≤5 = 2 pts · ≤10 = 1 pt</div>
+      </div>
+      <div class="slip reveal">
+        <span class="stamp turn">Turn type</span>
+        <h3>Worst of three</h3>
+        <p>Three situations side by side. Pick which one the deck rates worst.</p>
+        <div class="pts">Correct = 1 pt</div>
+      </div>
+      <div class="slip reveal">
+        <span class="stamp turn">Turn type</span>
+        <h3>Higher or lower</h3>
+        <p>You see the previous player's situation and its score. Is yours worse, or less bad?</p>
+        <div class="pts">Correct = 1 pt</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="stamp">The rail</span>
+      <h2>Every card has a number.<br>That's the whole argument.</h2>
+      <p>Situations are ranked on one scale from minor annoyance to disaster. In Classic you slot each new card into the line where you think it belongs.</p>
+    </div>
+    <div class="railwrap reveal" style="max-width:620px">
+      <div class="railcap">↑ Could be worse</div>
+      <div class="tcard"><span class="idx">13</span>You step barefoot on a Lego brick</div>
+      <div class="tcard"><span class="idx">30</span>Your fly is open through your entire presentation</div>
+      <div class="tcard newcard"><span class="idx">?</span>Your coat is no longer in the cloakroom</div>
+      <div class="tcard"><span class="idx">50</span>You get a message from someone it ended with</div>
+      <div class="tcard"><span class="idx">62</span>A burst pipe floods your entire ground floor</div>
+      <div class="railcap bottom">↓ Absolutely dreadful</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="stamp">Languages</span>
+      <h2>The whole deck,<br>translated eight times.</h2>
+      <p>Not machine-swapped labels — the full core deck in every language. The app follows your phone and you can change it by hand any time.</p>
+    </div>
+    <div class="langs reveal">
+      <div>English</div><div>Nederlands</div><div>Deutsch</div><div>Français</div>
+      <div>Español</div><div>Italiano</div><div>Português</div><div>中文</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section id="price">
+  <div class="wrap">
+    <div class="sechead reveal">
+      <span class="stamp">Price</span>
+      <h2>Start with 200 cards.<br>Finish the deck for €4.99.</h2>
+      <p>No subscription, no coins, no timers. Play the free deck as long as you like, and pay once if you want every card and no ads.</p>
+    </div>
+    <div class="grid2">
+      <div class="slip tier reveal">
+        <div class="fieldlabel">Free</div>
+        <div class="amount">€0</div>
+        <p style="font-size:14px;opacity:.7">200 cards, average misery around 50. Supported by ads between games.</p>
+        <ul>
+          <li>200 cards from across the whole scale</li>
+          <li>Classic and Party modes</li>
+          <li>All eight languages</li>
+          <li>1 to 8 players, fully offline</li>
+        </ul>
+        <a class="btn light block" href="https://play.google.com/store/apps/details?id=com.howbadgame.app">Download free</a>
+      </div>
+      <div class="slip tier paid reveal">
+        <div class="fieldlabel">Full game</div>
+        <div class="amount">€4.99</div>
+        <p style="font-size:14px;opacity:.7">One payment, in the app. Every card, no ads.</p>
+        <ul>
+          <li>The full deck of 995 cards</li>
+          <li>Every ad removed</li>
+          <li>Everything from the free version</li>
+          <li>Restore your purchase on a new phone</li>
+        </ul>
+        <a class="btn block" href="https://play.google.com/store/apps/details?id=com.howbadgame.app">Get the full game</a>
+        <div class="buy-sub">Unlock it from inside the app</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap" style="max-width:760px">
+    <div class="sechead reveal">
+      <span class="stamp">Questions</span>
+      <h2>Reasonable concerns</h2>
+    </div>
+    <details class="reveal"><summary>How many people do I need?</summary><p>Anywhere from one to eight. Solo works as a personal best run; three or more is where the arguing starts.</p></details>
+    <details class="reveal"><summary>Do I need internet?</summary><p>No. Every card ships inside the app, so the whole game runs offline once it is installed.</p></details>
+    <details class="reveal"><summary>Where do the scores come from?</summary><p>Each situation has a fixed misery index between 1 and 100, set by the deck. You are not voting on it — you are trying to work out what it already is. That is the part people shout about.</p></details>
+    <details class="reveal"><summary>Do cards repeat?</summary><p>The app remembers which cards this phone has already seen and deals fresh ones first. When the deck is exhausted, it starts over.</p></details>
+    <details class="reveal"><summary>What do I get for free?</summary><p>A starter deck of 200 cards with an average misery of around 50, both game modes, all eight languages and up to eight players. Ads appear between games.</p></details>
+    <details class="reveal"><summary>What does the full game add?</summary><p>One payment of €4.99 unlocks the complete deck and removes all ads. You buy it inside the app, there is no subscription, and you can restore it if you switch phones.</p></details>
+    <details class="reveal"><summary>Is there an iPhone version?</summary><p>Android first. Ask loudly enough and iOS follows.</p></details>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section class="closer">
+  <div class="wrap">
+    <div class="logo" aria-hidden="true"><span class="how">How</span><span class="badwrap"><span class="bad">Bad</span><span class="q">?</span></span></div>
+    <p>One phone, a deck of disasters, and 200 cards free to start. Find out what your friends think you deserve.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.howbadgame.app">Start the misery</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>All disasters are invented. Probably.</div>
+    <div>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const CARDS = [{"t": "You step barefoot on a Lego brick", "i": 13}, {"t": "The wifi drops during the final episode", "i": 19}, {"t": "Your phone is at 2% with an hour left on the train", "i": 21}, {"t": "You burp exactly when the room goes quiet", "i": 24}, {"t": "Your fly is open through your entire presentation", "i": 30}, {"t": "Your coat is no longer in the cloakroom", "i": 31}, {"t": "You get head lice as an adult", "i": 35}, {"t": "Your model topples after eighty hours of building", "i": 38}, {"t": "Your search history shows up on a shared device", "i": 41}, {"t": "You get sunstroke on the only good day", "i": 44}, {"t": "You retell your entire medical history to seven different people", "i": 50}, {"t": "You left your drink and someone has drunk from it", "i": 30}];
+
+const slider = document.getElementById('slider');
+const guessNum = document.getElementById('guessNum');
+const cardText = document.getElementById('cardText');
+const confirmBtn = document.getElementById('confirmBtn');
+const nextBtn = document.getElementById('nextBtn');
+const guessArea = document.getElementById('guessArea');
+const result = document.getElementById('result');
+const resultHead = document.getElementById('resultHead');
+const realScore = document.getElementById('realScore');
+const diffEl = document.getElementById('diff');
+
+let order = CARDS.map((_, i) => i);
+for (let i = order.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [order[i], order[j]] = [order[j], order[i]];
+}
+let pos = 0;
+
+function deal(){
+  const c = CARDS[order[pos % order.length]];
+  cardText.textContent = c.t;
+  slider.value = 50;
+  guessNum.textContent = '50';
+  result.classList.add('hidden');
+  guessArea.classList.remove('hidden');
+  return c;
+}
+let current = deal();
+
+slider.addEventListener('input', () => { guessNum.textContent = slider.value; });
+
+confirmBtn.addEventListener('click', () => {
+  const guess = +slider.value;
+  const diff = Math.round(Math.abs(current.i - guess) * 10) / 10;
+  let head, cls;
+  if (diff <= 5)       { head = '+2 points'; cls = 'good'; }
+  else if (diff <= 10) { head = '+1 point';  cls = 'good'; }
+  else                 { head = 'No points'; cls = 'bad';  }
+  resultHead.textContent = head;
+  result.className = 'result ' + cls;
+  realScore.textContent = current.i;
+  diffEl.textContent = diff;
+  guessArea.classList.add('hidden');
+});
+
+nextBtn.addEventListener('click', () => { pos++; current = deal(); });
+
+const io = new IntersectionObserver((es) => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.transitionDelay = (i % 3) * 60 + 'ms';
+  io.observe(el);
+});
+</script>
+</body>
+</html>
